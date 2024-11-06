@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
 
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.greenAccent),
+
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
@@ -53,7 +53,26 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
 
-        body: Text("Hello world")
+        body: Center(
+          child: CircleAvatar(
+            child: Column(
+              children: [
+                Container(
+                    width: 50,
+                    height: 50,
+                    child: Image.asset('assets/images/img_1.png')),
+                Text("UserId11"),
+              ],
+            ),
+            // Text("Paras", style: TextStyle(fontSize: 50, color: Colors.blue, ),),
+            // backgroundImage: AssetImage('assets/images/img.png'),
+            // backgroundColor: Colors.yellow,
+             radius: 45,
+            // minRadius: 100,
+            // maxRadius: 50,
+
+          ),
+        )
 
 
 

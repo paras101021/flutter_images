@@ -34,7 +34,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-
   void _incrementCounter() {
     setState(() {
 
@@ -53,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
 
-        body: Text("Hello world")
+        body: Text("Hello world",style: TextStyle(fontFamily: 'fontMain', fontSize: 40),)
 
 
 
