@@ -53,7 +53,30 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
 
-        body: Container()
+
+        body:
+
+        Container(
+          // width: 400,
+          //   height: 50,
+            color: Colors.black,
+          margin: EdgeInsets.all(22),
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text('hello world',style: TextStyle(color: Colors.red, fontSize: 30),),
+          ),
+        )
+
+
+        // Container(
+        //   width: 400,
+        //   height: 50,
+        //   color: Colors.black,
+        //   child: Padding(
+        //     padding: EdgeInsets.only(left: 12,top: 5),
+        //     child: Text("hello world", style: TextStyle(color: Colors.blue,fontSize: 28 ,),),
+        //   ),
+        // )
 
 
 

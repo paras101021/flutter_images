@@ -53,7 +53,37 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
 
-        body: Container()
+        body: Container(
+          width: double.infinity,
+          height: double.infinity,
+          color: Colors.blue.shade50 ,
+          child: Center(
+            child: Container(
+              width: 100,
+              height: 100,
+
+              decoration: BoxDecoration(
+                color: Colors.blueGrey,
+                // borderRadius: BorderRadius.circular(11)
+                // borderRadius: BorderRadius.only(topLeft:Radius.circular(34),topRight: Radius.circular(49),bottomLeft: Radius.circular(22),bottomRight: Radius.circular(29))
+                // borderRadius: BorderRadius.all(Radius.circular(5)),
+              //     border: Border.all(
+              //     width: 3,
+              //       color: Colors.blue.shade200,
+              // ),
+             boxShadow: [
+               BoxShadow(
+                  blurRadius: 5,
+                spreadRadius: 1,
+                color: Colors.blue
+              )
+                  ],
+                shape: BoxShape.circle
+
+              ),
+            ),
+          ),
+        )
 
 
 

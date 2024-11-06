@@ -44,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-
+var arrNames = ['paras','rohan','sohan','mohan','tohan','virat','rohit'];
     return Scaffold(
         appBar: AppBar(
 
@@ -53,7 +53,19 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
 
-        body: Container()
+        body: ListView.separated(itemBuilder: (context, index) {
+          return ListTile(
+            // leading: Text("${index+1}"),
+            title: Text(arrNames[index]),
+            subtitle: Text("Number"),
+            // trailing: Icon(Icons.add),
+          );
+        },
+          itemCount: arrNames.length,
+          separatorBuilder: (contex,index){
+          return Divider(height: 1,thickness: 2,color: Colors.black,);
+          },
+        )
 
 
 

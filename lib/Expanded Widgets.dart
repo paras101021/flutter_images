@@ -53,7 +53,45 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text(widget.title),
         ),
 
-        body: Container()
+        body: Column(
+          // mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+          Expanded(
+            flex: 1,
+            child: Container(
+              // width: 50,
+              height: 50,
+              color: Colors.blue,
+
+            ),
+          ),Expanded(
+              flex: 4,
+              child: Container(
+                // width: 50,
+                height: 50,
+                color: Colors.red,
+
+              ),
+            ),Expanded(
+              flex: 4,
+              child: Container(
+                // width: 50,
+                height: 50,
+                color: Colors.green,
+
+              ),
+            ),
+            Expanded(
+              child: Container(
+                // width: 50,
+                height: 50,
+                color: Colors.yellow,
+
+              ),
+            ),
+
+          ],
+        )
 
 
 
